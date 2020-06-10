@@ -23,7 +23,7 @@ def consolidate_cart(unconsolidated_cart)
         hash_found = true
       end
     end
-    # If finished looping through result, but there is no hash with the same item name as unconsolidated_cart_item_hash, add unconsolidated_cart_item_hash into result, and add count key with val of 1
+    # If finished looping through result, but hash is not found, add unconsolidated_cart_item_hash into result, and add count key with val of 1
     if hash_found == false
       unconsolidated_cart_item_hash[:count] = 1
       result << unconsolidated_cart_item_hash
@@ -32,6 +32,3 @@ def consolidate_cart(unconsolidated_cart)
   
   result
 end
-
-
-  
