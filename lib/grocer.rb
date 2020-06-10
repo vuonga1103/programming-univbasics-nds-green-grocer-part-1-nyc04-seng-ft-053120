@@ -9,6 +9,7 @@ def find_item_by_name_in_collection(search_item, collection)
   return nil
 end
 
+
 def consolidate_cart(unconsolidated_cart)
   result = []
   
